@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    display: flex;
+    max-width: 50%;
+    margin-top: 4%;
+    flex-direction: column;
+}
+
+header {
+    border: 1px solid gray;
+    margin: 0px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    color: rgb(49, 62, 75);
+}
+
+main {
+    border: 1px solid gray;
+}
+
+section {
+    margin-left: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 2rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 0.8rem;
+}
+
+main p:first-of-type {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+main p:last-of-type {
+    margin-left: 10px;
+    color: rgb(49, 62, 75);
+}
+
+footer {
+    display: flex;
+}
+
+footer button {
+    width: 34%;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+#playerOnePoint.active {
+    background-color: rgb(25, 216, 127);
+    border: 1px solid rgb(10, 187, 104);
+}
+
+#playerOnePoint {
+    background-color: rgba(45, 194, 125, 0.65);
+    border: 1px solid rgb(10, 187, 104);
+}
+
+#playerOnePoint:hover {
+    cursor: not-allowed;
+}
+
+#playerOnePoint.active:hover {
+    background-color: rgb(45, 194, 125);
+    cursor: pointer;
+}
+
+#playerTwoPoint.active {
+    background-color: rgb(47, 146, 228);
+    border: 1px solid rgb(24, 120, 199);
+}
+
+#playerTwoPoint {
+    background-color: rgba(32, 125, 201, 0.65);
+    border: 1px solid rgb(24, 120, 199);
+}
+
+#playerTwoPoint:hover {
+    cursor: not-allowed;
+}
+
+#playerTwoPoint.active:hover {
+    background-color: rgb(32, 125, 201);
+    cursor: pointer;
+}
+
+#resetScore {
+    background-color: rgb(226, 36, 36);
+    border: 1px solid rgb(211, 16, 16);
+    cursor: pointer;
+}
+
+#resetScore:hover {
+    background-color: rgb(196, 25, 25);
+}
+
+@media (max-width: 600px) {
+    div {
+        min-width: 100%;
+    }
+}
